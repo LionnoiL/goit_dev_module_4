@@ -1,0 +1,12 @@
+2023-01-11 11:03:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "--select concat('Project ',id) as name, DATEDIFF(MONTH, start_date, finish_date) as month_count from project\000d\000a[*]group by id\000d\000ahaving month_count = (\000d\000aselect max(DATEDIFF(MONTH, start_date, finish_date)) from project)"; SQL statement:
+--select concat('Project ',id) as name, DATEDIFF(MONTH, start_date, finish_date) as month_count from project
+group by id
+having month_count = (
+select max(DATEDIFF(MONTH, start_date, finish_date)) from project) [42000-214]
+2023-01-11 11:03:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "--select concat('Project ',id) as name, DATEDIFF(MONTH, start_date, finish_date) as month_count from project\000d\000a[*]group by id\000d\000ahaving month_count = (\000d\000aselect max(DATEDIFF(MONTH, start_date, finish_date)) from project)"; SQL statement:
+--select concat('Project ',id) as name, DATEDIFF(MONTH, start_date, finish_date) as month_count from project
+group by id
+having month_count = (
+select max(DATEDIFF(MONTH, start_date, finish_date)) from project) [42000-214]

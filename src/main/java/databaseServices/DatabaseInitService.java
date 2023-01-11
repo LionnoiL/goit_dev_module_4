@@ -1,4 +1,4 @@
-package services;
+package databaseServices;
 
 public class DatabaseInitService {
     public static void main(String[] args) {

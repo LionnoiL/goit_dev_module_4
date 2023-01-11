@@ -1,4 +1,4 @@
-package services;
+package databaseServices;
 
 import selectSqlClasses.LongestProject;
 import selectSqlClasses.MaxProjectCountClient;
@@ -58,7 +58,7 @@ public class DatabaseQueryService {
             st.close();
             rs.close();
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
 
 
@@ -84,7 +84,7 @@ public class DatabaseQueryService {
             st.close();
             rs.close();
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
 
 
@@ -111,7 +111,7 @@ public class DatabaseQueryService {
             st.close();
             rs.close();
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
 
 
