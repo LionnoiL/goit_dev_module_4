@@ -1,9 +1,9 @@
+import databaseServices.DatabaseQueryService;
 import org.junit.jupiter.api.Test;
 import selectSqlClasses.LongestProject;
 import selectSqlClasses.MaxProjectCountClient;
 import selectSqlClasses.MaxSalaryWorker;
 import selectSqlClasses.YoungestEldestWorker;
-import databaseServices.DatabaseQueryService;
 
 import java.util.List;
 

@@ -10,8 +10,7 @@ public class Utils {
         throw new IllegalStateException("Utility class");
     }
 
-
-    public static String getFilesLines(String fileName){
+    public static String getFilesLines(String fileName) {
 
         String result = "";
         try {

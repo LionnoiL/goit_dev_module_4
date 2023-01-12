@@ -5,3 +5,5 @@
 build/
 .gradle/
 app/build/
+megasoft.mv.db
+megasoft.trace.db

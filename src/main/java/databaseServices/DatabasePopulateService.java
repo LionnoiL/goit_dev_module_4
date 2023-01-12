@@ -5,4 +5,5 @@ public class DatabasePopulateService {
         Database db = Database.getInstance();
         db.executeSqlFile("sql/populate_db.sql");
     }
+
 }

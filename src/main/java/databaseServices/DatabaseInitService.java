@@ -5,4 +5,5 @@ public class DatabaseInitService {
         Database db = Database.getInstance();
         db.executeSqlFile("sql/init_db.sql");
     }
+
 }
