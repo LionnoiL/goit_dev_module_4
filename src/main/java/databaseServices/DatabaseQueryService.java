@@ -16,7 +16,7 @@ public class DatabaseQueryService {
         List<MaxProjectCountClient> result = new ArrayList<>();
         String sql = Utils.getFilesLines("sql/find_max_projects_client.sql");
 
-        new SqlHelper<MaxProjectCountClient>().executeQuery(sql, rs -> {
+        new SqlHelper().executeQuery(sql, rs -> {
             try {
                 while (rs.next()) {
                     MaxProjectCountClient maxProjectCountClient = new MaxProjectCountClient();
@@ -36,7 +36,7 @@ public class DatabaseQueryService {
         List<LongestProject> result = new ArrayList<>();
         String sql = Utils.getFilesLines("sql/find_longest_project.sql");
 
-        new SqlHelper<MaxProjectCountClient>().executeQuery(sql, rs -> {
+        new SqlHelper().executeQuery(sql, rs -> {
             try {
                 while (rs.next()) {
                     LongestProject longestProject = new LongestProject();
@@ -56,7 +56,7 @@ public class DatabaseQueryService {
         List<MaxSalaryWorker> result = new ArrayList<>();
         String sql = Utils.getFilesLines("sql/find_max_salary_worker.sql");
 
-        new SqlHelper<MaxProjectCountClient>().executeQuery(sql, rs -> {
+        new SqlHelper().executeQuery(sql, rs -> {
             try {
                 while (rs.next()) {
                     MaxSalaryWorker maxSalaryWorker = new MaxSalaryWorker();
@@ -76,7 +76,7 @@ public class DatabaseQueryService {
         List<YoungestEldestWorker> result = new ArrayList<>();
         String sql = Utils.getFilesLines("sql/find_youngest_eldest_workers.sql");
 
-        new SqlHelper<MaxProjectCountClient>().executeQuery(sql, rs -> {
+        new SqlHelper().executeQuery(sql, rs -> {
             try {
                 while (rs.next()) {
                     YoungestEldestWorker youngestEldestWorker = new YoungestEldestWorker();
